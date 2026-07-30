@@ -1,1 +1,1 @@
-$execute at @s facing $(x) $(y) $(z) run tp @s ^ ^ ^1
+$execute at @s facing $(x) $(y) $(z) run tp @s ^ ^0.1 ^1
