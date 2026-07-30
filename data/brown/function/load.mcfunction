@@ -4,6 +4,8 @@ scoreboard objectives add brown_debug dummy
 scoreboard objectives add brown_clone_target dummy
 scoreboard objectives add brown_clone_test dummy
 
+scoreboard objectives add brown_hot_potato_timer dummy
+
 
 team add brown_steampunk
 team modify brown_steampunk color dark_red
