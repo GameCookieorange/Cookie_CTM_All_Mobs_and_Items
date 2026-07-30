@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "bullet_aim":{
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards":{
+        "function": "cyan:item/shulker_potion/init_player"
+    }
+
+}

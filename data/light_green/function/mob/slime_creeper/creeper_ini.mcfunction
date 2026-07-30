@@ -1,0 +1,4 @@
+effect give @s luck 1 60 true
+
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:2,SpawnRange:5,MaxNearbyEntities:10,RequiredPlayerRange:14,Delay:1,MinSpawnDelay:800,MaxSpawnDelay:1000,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:creeper",Team:"light_green_slime",Health:14f,Tags:["light_green.slime_creeper"],CustomName:{"bold":true,"color":"#69D14F","italic":false,"shadow_color":-16620743,"text":"黏液苦力怕","underlined":true},active_effects:[{id:"minecraft:oozing",amplifier:0,duration:999999,show_particles:1b}],attributes:[{id:"minecraft:attack_damage",base:5},{id:"minecraft:follow_range",base:20},{id:"minecraft:jump_strength",base:1.5},{id:"minecraft:max_health",base:14},{id:"minecraft:movement_speed",base:0.22},{id:"minecraft:oxygen_bonus",base:10},{id:"minecraft:safe_fall_distance",base:4}]}},weight:1}]}] 1

@@ -1,0 +1,31 @@
+# 1. 基礎計時與粒子
+execute as @e[tag=orange.wind.charge.stray.sniper] run scoreboard players add @s orange_timer 1
+execute as @e[tag=orange.wind.charge.stray.sniper] run scoreboard players add @s orange_debug 1
+
+execute as @e[scores={orange_debug=2500..}] run kill @e[tag = fw_direction, distance=..75]
+execute as @e[scores={orange_debug=2500..}] run scoreboard players set @s orange_debug -10
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=0..15}] at @s if entity @p[distance=50..] run particle minecraft:cloud ~ ~ ~ 1 1 1 0.01 1 force
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=10..15}] at @s if entity @p[distance=50..] run scoreboard players set @s orange_timer 10
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=10..15}] at @s if entity @p[distance=..50] run scoreboard players set @s orange_timer 20
+
+# 2. 蓄力階段：到達 20 時的預警
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=25}] at @s run playsound minecraft:entity.wandering_trader.reappeared ambient @a ~ ~ ~ 1 1.5
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=25}] run effect give @s minecraft:glowing 1 1 true
+
+# execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=50}] at @p run summon marker ~ ~ ~ {Tags:[fw_direction]}
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=26..65}] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~ 
+# 這tp @s ~ ~ ~ ~ ~ 會讓狙擊手一直面向玩家??????
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=26..65}] at @s run particle minecraft:cloud ^ ^3 ^1 0.1 0.1 0.1 0.001 1 force
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=65}] at @s run summon firework_rocket ^ ^3 ^1 {Tags:[sniper_rocket],ShotAtAngle:1b,LifeTime:100,CustomName:{"bold":true,"color":"white","shadow_color":-26368,"text":"☁霧霾火箭☁"},FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;16777215],fade_colors:[I;16750111],has_trail:1b}]}}}}
+
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=65}] at @s run function thecookieorange:mob/stray_sniper/calculate_motion
+
+# 4. 重置階段：120 tick 後重置計時器
+execute as @e[tag=orange.wind.charge.stray.sniper, scores={orange_timer=120..}] run scoreboard players set @s orange_timer 0
+
+# give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:1,MaxNearbyEntities:1,RequiredPlayerRange:45,PersistenceRequired:1b,Delay:10,MinSpawnDelay:1000,MaxSpawnDelay:1500,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:stray",OnGround:1b,Health:16f,Tags:["orange.wind.charge.stray.sniper"],CustomName:{"bold":true,"color":"gold","shadow_color":-1,"translate":"entity.cookieorange_res.orange_wind_charge_stray_sniper"},equipment:{chest:{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:eye"},"minecraft:enchantments":{"blast_protection":4}}},head:{id:"minecraft:waxed_copper_grate",count:1},mainhand:{id:"minecraft:crossbow",count:1},offhand:{id:"minecraft:firework_rocket",count:3,components:{"minecraft:fireworks":{flight_duration:4,explosions:[{shape:"large_ball",colors:[I;16777215],fade_colors:[I;16744448]}]}}}},drop_chances:{chest:0.000,head:0.000,mainhand:0.000,offhand:1.000},attributes:[{id:"minecraft:attack_damage",base:6},{id:"minecraft:explosion_knockback_resistance",base:1},{id:"minecraft:follow_range",base:30},{id:"minecraft:knockback_resistance",base:0.5},{id:"minecraft:movement_speed",base:0}]}},weight:1}]}] 1

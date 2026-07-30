@@ -1,0 +1,4 @@
+summon marker ~0.2 ~1.25 ~0.2 {Tags:["light_blue.bullet_1","light_blue.bullet"],Invulnerable:1b,NoGravity:1b,CustomName:{"bold":true,"color":"#74E3DF","italic":false,"shadow_color":-14197003,"text":"**破碎晶體**","underlined":true}}
+summon marker ~0.2 ~1.25 ~-0.2 {Tags:["light_blue.bullet_2","light_blue.bullet"],Invulnerable:1b,NoGravity:1b,CustomName:{"bold":true,"color":"#74E3DF","italic":false,"shadow_color":-14197003,"text":"**破碎晶體**","underlined":true}}
+summon marker ~-0.2 ~1.25 ~0.2 {Tags:["light_blue.bullet_3","light_blue.bullet"],Invulnerable:1b,NoGravity:1b,CustomName:{"bold":true,"color":"#74E3DF","italic":false,"shadow_color":-14197003,"text":"**破碎晶體**","underlined":true}}
+summon marker ~-0.2 ~1.25 ~-0.2 {Tags:["light_blue.bullet_4","light_blue.bullet"],Invulnerable:1b,NoGravity:1b,CustomName:{"bold":true,"color":"#74E3DF","italic":false,"shadow_color":-14197003,"text":"**破碎晶體**","underlined":true}}

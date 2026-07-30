@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:clock",
+          "predicates": {
+            "minecraft:custom_data": "{orange_panic_button:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "thecookieorange:item/panic_button/panic_button_ini"
+  }
+}

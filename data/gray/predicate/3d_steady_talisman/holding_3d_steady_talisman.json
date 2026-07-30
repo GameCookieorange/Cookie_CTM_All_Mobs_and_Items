@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "components": {
+                    "minecraft:item_model": "cookieorange_res:3d_steady_talisman"
+                }
+            }
+        }
+    }
+}

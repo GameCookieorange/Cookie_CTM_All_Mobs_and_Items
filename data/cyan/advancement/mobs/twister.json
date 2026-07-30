@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ice_skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage":{
+                    "source_entity": {
+                        "nbt": "{Tags:[\"cyan.space_twister\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cyan:mob/space_twister/twister_effect"
+    }
+}

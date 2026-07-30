@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "feet": {
+        "items": "minecraft:netherite_boots",
+        "predicates": {
+          "minecraft:damage": {
+            "durability": {
+              "min": 385
+            }
+          },
+          "minecraft:custom_data": {
+            "orange_coward_critic": 1
+          }
+        }
+      }
+    }
+  }
+}

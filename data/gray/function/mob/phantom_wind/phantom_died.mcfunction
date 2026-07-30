@@ -1,0 +1,5 @@
+# execute if entity @e[type=#minecraft:attack_entity ,distance=..3] run execute as @e[type=#minecraft:attack_entity ,distance=..3] run damage @s 1 minecraft:mob_attack_no_aggro by @e[type=phantom, sort=nearest, tag=gray.wind_phantom, limit=1]
+
+summon silverfish ~ ~ ~ {Silent:1b,Health:15f,Team:"gray_cloud_mobs",Tags:["gray.wind_silverfish"],CustomName:{"bold":true,"color":"#929292","italic":false,"shadow_color":-2039584,"translate":"疾風核心","underlined":true},equipment:{offhand:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_name":{"bold":true,"color":"white","italic":true,"shadow_color":-9871264,"translate":"固態風"}}}},drop_chances:{offhand:0.30},active_effects:[{id:"minecraft:wither",amplifier:0,duration:60000,show_particles:0b},{id:"minecraft:invisibility",amplifier:1,duration:60000,show_particles:0b},{id:"minecraft:wind_charged",amplifier:1,duration:99999,show_particles:0b}],attributes:[{id:"minecraft:attack_damage",base:2},{id:"minecraft:attack_knockback",base:1.5},{id:"minecraft:follow_range",base:20},{id:"max_health",base:15},{id:"minecraft:scale",base:2},{id:"movement_speed",base:0.3},{id:"minecraft:safe_fall_distance",base:80}]}
+
+kill @s

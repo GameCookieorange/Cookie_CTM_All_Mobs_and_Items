@@ -1,0 +1,1 @@
+tp @s @e[type=!#minecraft:not_mob, distance=..12, tag=brown.got_hot_potato, limit=1, sort=nearest]

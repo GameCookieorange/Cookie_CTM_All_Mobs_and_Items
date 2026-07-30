@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "flags": {
+            "is_sneaking": true
+        },
+        "equipment": {
+            "offhand": {
+                "items": ["minecraft:clock"],
+                "predicates": {
+                    "minecraft:custom_data": "{orange_panic_button:1b}"
+                }
+            }
+        }
+    }
+}

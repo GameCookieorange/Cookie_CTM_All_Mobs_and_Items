@@ -1,0 +1,26 @@
+# 1. 漂浮效果：對處於中心 16x16x16 區域內的玩家施加效果
+execute positioned ~-15 ~-15 ~-15 as @a[dx=30,dy=30,dz=30] run effect give @s minecraft:slow_falling 3 3 true
+execute positioned ~-15 ~-15 ~-15 as @a[dx=30,dy=30,dz=30] run effect give @s minecraft:jump_boost 1 5 true
+# execute positioned ~-15 ~-15 ~-15 as @a[dx=30,dy=30,dz=30] run effect give @s minecraft:night_vision 11 1 true
+execute positioned ~-15 ~-15 ~-15 as @a[dx=30,dy=30,dz=30] at @s run particle cloud ~ ~ ~ 0.4 0.4 0.4 0.01 1
+
+function thecookieorange:floating_area/particles
+
+# execute if entity @a[distance=..38] run function thecookieorange:floating_area/main
+# --- 底部四條邊 (Y = -15) ---
+particle cloud ~0 ~-15 ~-15 8 0 0 0 2
+particle cloud ~0 ~-15 ~15 8 0 0 0 2
+particle cloud ~-15 ~-15 ~0 0 0 8 0 2
+particle cloud ~15 ~-15 ~0 0 0 8 0 2
+
+# --- 頂部四條邊 (Y = 15) ---
+particle cloud ~0 ~15 ~-15 8 0 0 0 2
+particle cloud ~0 ~15 ~15 8 0 0 0 2
+particle cloud ~-15 ~15 ~0 0 0 8 0 2
+particle cloud ~15 ~15 ~0 0 0 8 0 2
+
+# --- 垂直四條邊 (高度延伸) ---
+particle cloud ~-15 ~0 ~-15 0 8 0 0 2
+particle cloud ~15 ~0 ~-15 0 8 0 0 2
+particle cloud ~-15 ~0 ~15 0 8 0 0 2
+particle cloud ~15 ~0 ~15 0 8 0 0 2

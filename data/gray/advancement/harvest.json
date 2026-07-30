@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "player_killed_entity": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:stone_hoe"
+                  ],
+                  "predicates": {
+                    "minecraft:custom_data": "{orange_haverst:1b}"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#minecraft:hostile"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thecookieorange:item/harvest/some_food"
+  }
+}

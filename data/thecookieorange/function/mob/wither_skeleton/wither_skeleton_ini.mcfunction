@@ -1,0 +1,21 @@
+# 1. 基礎計時與粒子
+scoreboard players add @s orange_timer 1
+
+# 2. 蓄力階段：到達 20 時的預警
+execute if score @s orange_timer matches 25 run playsound minecraft:entity.evoker.prepare_attack ambient @a ~ ~ ~ 1 1.5
+execute if score @s orange_timer matches 25 run effect give @s minecraft:glowing 1 1 true
+
+execute if score @s orange_timer matches ..15 run particle minecraft:cloud ~ ~ ~ 1 1 1 0.01 1 force
+execute if score @s orange_timer matches 10..15 at @s if entity @e[type=#minecraft:attack_entity ,distance=..14] run scoreboard players set @s orange_timer 20
+execute if score @s orange_timer matches 10..15 at @s unless entity @e[type=#minecraft:attack_entity ,distance=..14] run scoreboard players set @s orange_timer 10
+
+execute if score @s orange_timer matches 40 at @s run summon phantom ^ ^3 ^ {Silent:1b,Health:4f,DeathLootTable:"minecraft:empty",size:2,Tags:["orange.wind.charge.weak.phantom"],CustomName:{"bold":true,"color":"white","shadow_color":-22252,"translate":"entity.cookieorange_res.orange_wind_charge_phantom"},equipment:{offhand:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_name":{"bold":true,"color":"white","italic":true,"shadow_color":-9871264,"translate":"item.cookieorange_res.solid_wind"}}}},drop_chances:{offhand:0.4},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:99999},{id:"minecraft:wind_charged",amplifier:1,duration:99999}],attributes:[{id:"minecraft:attack_damage",base:0},{id:"minecraft:follow_range",base:20}]}
+
+execute if score @s orange_timer matches 40 at @s run summon phantom ^ ^3 ^ {Silent:1b,Health:4f,DeathLootTable:"minecraft:empty",size:2,Tags:["orange.wind.charge.weak.phantom"],CustomName:{"bold":true,"color":"white","shadow_color":-22252,"translate":"entity.cookieorange_res.orange_wind_charge_phantom"},equipment:{offhand:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_name":{"bold":true,"color":"white","italic":true,"shadow_color":-9871264,"translate":"item.cookieorange_res.solid_wind"}}}},drop_chances:{offhand:0.4},active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:99999},{id:"minecraft:wind_charged",amplifier:1,duration:99999}],attributes:[{id:"minecraft:attack_damage",base:0},{id:"minecraft:follow_range",base:20}]}
+
+execute as @e[tag=orange.wind.charge.wither.skeleton, scores={orange_timer=600..}] run scoreboard players set @s orange_timer 0
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:2,MaxNearbyEntities:2,RequiredPlayerRange:10,Delay:10,MinSpawnDelay:1200,MaxSpawnDelay:1300,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:wither_skeleton",OnGround:1b,PersistenceRequired:1b,Health:24f,Tags:["orange.wind.charge.wither.skeleton"],CustomName:{"bold":true,"color":"gold","shadow_color":-866,"underlined":true,"translate":"entity.cookieorange_res.orange_wind_charge_wither_skeleton"},equipment:{chest:{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:silence"},"minecraft:enchantments":{"projectile_protection":3}}},mainhand:{id:"minecraft:wind_charge",count:4,components:{"minecraft:custom_name":{"bold":true,"color":"white","italic":true,"shadow_color":-9871264,"translate":"item.cookieorange_res.solid_wind"}}},offhand:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_name":{"bold":true,"color":"white","italic":true,"shadow_color":-9871264,"translate":"item.cookieorange_res.solid_wind"}}}},drop_chances:{chest:0.000,mainhand:1.000,offhand:0.000},attributes:[{id:"minecraft:attack_damage",base:6},{id:"minecraft:attack_knockback",base:2},{id:"minecraft:explosion_knockback_resistance",base:1},{id:"minecraft:follow_range",base:26},{id:"minecraft:knockback_resistance",base:0.4},{id:"minecraft:max_health",base:24},{id:"minecraft:movement_speed",base:0.1},{id:"minecraft:safe_fall_distance",base:2}]}},weight:1}]}] 1
+
+# New updata log: Gale Summoner's Unstable Winds will not spawn its core (silverfishes). 
+# Reduce the RequiredPlayerRange requirement from 16 to 10 blocks.

@@ -1,0 +1,5 @@
+summon parrot ~ ~ ~ {Team:"pink_pirate_team",Health:7f,Sitting:0b,Tags:["pink.pirate_captain_parrot"],Passengers:[{id:"minecraft:silverfish",Silent:1b,Invulnerable:0b,CustomNameVisible:1b,Tags:["magenta.parrot_bug"],Team:"pink_pirate_team",CustomName:{"bold":true,"color":"light_purple","italic":false,"shadow_color":-20294,"text":"船長鸚鵡","underlined":true},active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:999999,show_particles:0b},{id:"minecraft:resistance",amplifier:1,duration:999999,show_particles:0b},{id:"minecraft:weakness",amplifier:100,duration:999999,show_particles:0b}],attributes:[{id:"minecraft:attack_damage",base:-1},{id:"minecraft:scale",base:0.01}]}],CustomName:{"bold":true,"color":"light_purple","italic":false,"shadow_color":-872777,"text":"船長鸚鵡","underlined":true},attributes:[{id:"minecraft:max_health",base:7},{id:"minecraft:movement_efficiency",base:0.8},{id:"minecraft:movement_speed",base:0.4},{id:"minecraft:scale",base:1.2}]}
+
+tp ~ ~-7000 ~ 
+
+kill @s

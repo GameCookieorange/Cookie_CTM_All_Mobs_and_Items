@@ -1,0 +1,11 @@
+execute as @s[tag=cyan.start_breath] run playsound minecraft:entity.witch.drink player @a ~ ~ ~ 1.2 1.2
+
+execute if score @s cyan_air_lost matches 1.. run scoreboard players set @s cyan_air_lost 0
+
+execute as @s[tag=cyan.start_breath] run tag @s add cyan.attack_by_astronaut
+
+# give @a cooked_beef
+
+advancement revoke @s only cyan:mobs/lose_air
+
+# give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:2,SpawnRange:10,MaxNearbyEntities:6,RequiredPlayerRange:12,Delay:1,MinSpawnDelay:1000,MaxSpawnDelay:1200,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},equipment:{slot_drop_chances:{feet:0,legs:0,chest:0,head:0,body:0,mainhand:0,offhand:0,saddle:0}},entity:{id:"minecraft:skeleton",Health:26f,Tags:["cyan.space_creature","cyan.death_astronaut"],CustomName:{"bold":true,"color":"#3DB0A5","italic":false,"shadow_color":-6963001,"translate":"死亡太空人","underlined":true},equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:dyed_color":11845316,"minecraft:trim":{material:"minecraft:lapis",pattern:"minecraft:vex"}}},legs:{id:"minecraft:leather_leggings",count:1,components:{"minecraft:dyed_color":14940415}},chest:{id:"minecraft:iron_chestplate",count:1,components:{"minecraft:trim":{material:"minecraft:lapis",pattern:"minecraft:rib"}}},head:{id:"minecraft:tinted_glass",count:1,components:{"minecraft:enchantment_glint_override":true}},mainhand:{id:"minecraft:waxed_oxidized_lightning_rod",count:1,components:{"minecraft:enchantment_glint_override":true,"minecraft:enchantments":{"fire_aspect":1}}},offhand:{id:"minecraft:stone_button",count:1,components:{"minecraft:enchantment_glint_override":true}}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},active_effects:[{id:"minecraft:slow_falling",amplifier:2,duration:999999,show_particles:0b},{id:"minecraft:jump_boost",amplifier:2,duration:999999,show_particles:0b}],attributes:[{id:"minecraft:attack_damage",base:5.5},{id:"minecraft:max_health",base:26},{id:"minecraft:movement_speed",base:0.25}]}},weight:1}]}] 1

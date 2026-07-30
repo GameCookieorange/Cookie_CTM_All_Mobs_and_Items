@@ -1,0 +1,4 @@
+execute if entity @e[type=slime, distance=..6] run effect give @s oozing 6 0
+execute as @s[nbt={active_effects:[{id:"minecraft:oozing"}]}] run effect give @s slowness 1 2 true
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:4,SpawnRange:6,MaxNearbyEntities:10,RequiredPlayerRange:14,Delay:1,MinSpawnDelay:900,MaxSpawnDelay:1100,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:cave_spider",Team:"light_green_slime",Health:6f,Tags:["light_green.swamp_spider"],CustomName:{"bold":true,"color":"#75BA3A","italic":false,"shadow_color":-11506871,"text":"沼澤蜘蛛","underlined":true},attributes:[{id:"minecraft:attack_damage",base:3},{id:"minecraft:max_health",base:6},{id:"minecraft:movement_speed",base:1.6},{id:"minecraft:scale",base:1.2}]}},weight:1}]}] 1

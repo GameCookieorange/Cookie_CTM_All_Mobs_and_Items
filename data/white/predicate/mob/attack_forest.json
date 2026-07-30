@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "target_entity",
+  "predicate": {
+    "team": "white_invade_creature",
+    "targeted_entity": {
+      "team": "white_forest_creature"
+    }
+  }
+}

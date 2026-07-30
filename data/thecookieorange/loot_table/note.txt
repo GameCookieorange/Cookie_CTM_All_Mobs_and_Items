@@ -1,0 +1,13 @@
+give @p minecraft:waxed_copper_chest[minecraft:container_loot={loot_table:"thecookieorange:chests/normal_copper_chest"}]
+
+give @p minecraft:waxed_copper_chest[minecraft:container_loot={loot_table:"thecookieorange:chests/blocks_copper_chest"}]
+
+give @p minecraft:waxed_copper_chest[minecraft:container_loot={loot_table:"thecookieorange:chests/blocks_copper_chest"}]
+
+/give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:1,MaxNearbyEntities:6,RequiredPlayerRange:7,Delay:1,MinSpawnDelay:500,MaxSpawnDelay:600,SpawnData:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:creeper"}}}] 1
+
+/give @p written_book[written_book_content={title:"",author:"",pages:[[{"translate":"book.cookieorange_res.orange_dairy_tree_lore_1"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_2"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_3"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_4"}],[{"translate":"book.cookieorange_res.orange_dairy_tree_lore_5"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_6"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_7"},{"translate":"book.cookieorange_res.orange_dairy_tree_lore_8"}],{"translate":"book.cookieorange_res.orange_dairy_tree_lore_9"}]}] 1
+
+/give @p pale_oak_sign[block_entity_data={id:"sign",front_text:{messages:[{"translate":""},{"translate":"book.cookieorange_res.orange_arrow_1","color":"#C74EBD","bold":true},{"translate":"book.cookieorange_res.orange_arrow_2","color":"gold","bold":true},""]}}] 1
+
+/give @p pale_oak_sign[block_entity_data={id:"sign",front_text:{messages:[{"translate":""},{"translate":"book.cookieorange_res.orange_arrow_1","color":"#C74EBD","bold":true},"",""]}}] 1

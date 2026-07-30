@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ice_skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage":{
+                    "source_entity": {
+                        "nbt": "{Tags:[\"cyan.green_alien\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cyan:mob/green_alien/alien_ini"
+    }
+}

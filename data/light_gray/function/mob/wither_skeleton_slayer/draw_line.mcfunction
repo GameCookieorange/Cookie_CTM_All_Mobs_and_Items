@@ -1,0 +1,9 @@
+particle sweep_attack ^ ^1.5 ^1.5 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^1.75 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^2 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^2.25 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^2.5 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^2.75 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^3 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^3.25 0 0 0 0 1
+particle sweep_attack ^ ^1.5 ^3.5 0 0 0 0 1

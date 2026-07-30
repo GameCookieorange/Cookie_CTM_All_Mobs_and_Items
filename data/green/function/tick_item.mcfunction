@@ -1,0 +1,1 @@
+execute as @e[tag=green_creeper_hat, predicate=!green:items/creeper_hat_for_creeper,type=armor_stand] at @s run kill @s

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:stick",
+          "predicates": {
+            "minecraft:custom_data": "{throwable_stick:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "white:item/stick/stick_ini"
+  }
+}

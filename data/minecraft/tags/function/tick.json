@@ -1,0 +1,29 @@
+{
+  "values": [
+    "thecookieorange:tick",
+    "thecookieorange:tick_item",
+    "black:tick",
+    "black:tick_item",
+    "pink:tick",
+    "pink:tick_item",
+    "light_gray:tick",
+    "light_green:tick",
+    "light_blue:tick",
+    "light_blue:tick_item",
+    "gray:tick",
+    "gray:tick_item",
+    "green:tick",
+    "green:tick_item",
+    "cyan:tick",
+    "cyan:tick_item",
+    "blue:tick",
+    "yellow:tick",
+    "magenta:tick",
+    "orange:tick",
+    "white:tick",
+    "white:tick_item", 
+    "final:tick",
+    "purple:tick",
+    "brown:tick"
+  ]
+}

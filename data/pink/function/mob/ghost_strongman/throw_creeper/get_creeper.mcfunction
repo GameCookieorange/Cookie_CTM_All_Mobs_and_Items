@@ -1,0 +1,1 @@
+tp @e[type=creeper, tag=pink.ghost_bomb, limit=1, sort=nearest, distance=..3] ~ ~2.5 ~

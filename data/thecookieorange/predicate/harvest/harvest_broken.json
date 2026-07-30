@@ -1,0 +1,25 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "weapon.mainhand": {
+        "predicates": {
+          "minecraft:damage": {
+            "durability": {
+              "max": 4
+            }
+          }
+        }
+      }
+    },
+    "equipment": {
+      "mainhand": {
+        "items": ["minecraft:stone_hoe"],
+        "predicates": {
+          "minecraft:custom_data": "{orange_haverst:1b}"
+        }
+      }
+    }
+  }
+}

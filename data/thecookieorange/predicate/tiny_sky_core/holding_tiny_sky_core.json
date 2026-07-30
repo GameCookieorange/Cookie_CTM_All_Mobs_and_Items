@@ -1,0 +1,16 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "offhand": {
+                "items": ["minecraft:nether_star"],
+                "predicates": {
+                    "minecraft:custom_data": {
+                        "orange_tiny_sky_core": 1
+                    } 
+                }
+            }
+        }
+    }
+}

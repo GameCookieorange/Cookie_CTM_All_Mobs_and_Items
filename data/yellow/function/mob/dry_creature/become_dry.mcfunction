@@ -1,0 +1,7 @@
+execute if entity @s[tag=yellow.thirsty] run scoreboard players add @s yellow_become_thirsty 300
+
+tag @s add yellow.thirsty
+
+advancement revoke @s only yellow:dry_attack
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:2,SpawnRange:4,MaxNearbyEntities:10,RequiredPlayerRange:14,Delay:1,MinSpawnDelay:750,MaxSpawnDelay:900,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:parched",Team:"yellow_desert_creature",Health:20f,Tags:["yellow.dry_creature"],equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:dyed_color":14260560}},chest:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:dyed_color":16760358,"minecraft:trim":{material:"minecraft:resin",pattern:"minecraft:dune"}}},head:{id:"minecraft:leather_helmet",count:1,components:{"minecraft:dyed_color":12873744}},mainhand:{id:"minecraft:bow",count:1,components:{"minecraft:enchantment_glint_override":true}}},drop_chances:{feet:0.000,chest:0.000,head:0.000,mainhand:0.000},attributes:[{id:"minecraft:max_health",base:20},{id:"minecraft:movement_speed",base:0.2}]}},weight:1}]}] 1

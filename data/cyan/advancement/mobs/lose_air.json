@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ice_skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage":{
+                    "source_entity": {
+                        "nbt": "{Tags:[\"cyan.death_astronaut\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cyan:mob/death_astronaut/astronaut_ini"
+    }
+}

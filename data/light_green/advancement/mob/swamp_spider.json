@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ice_skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage":{
+                    "source_entity": {
+                        "nbt": "{Tags:[\"light_green.swamp_spider\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "light_green:mob/swamp_spider/poison"
+    }
+}

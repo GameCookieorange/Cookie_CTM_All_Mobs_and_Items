@@ -1,0 +1,3 @@
+playsound entity.player.levelup ambient @s ~ ~ ~ 1 1
+
+tellraw @s ["",{translate:"cookieorange_res.orange_mob_info",bold:true,color:"white"},{translate:"entity.cookieorange_res.orange_wind_charge_zombie",bold:true,color:"white",hover_event:{action:"show_text",value:[{translate:"entity.cookieorange_res.orange_wind_charge_zombie_lore_1"},{translate:"entity.cookieorange_res.orange_wind_charge_zombie_lore_2"}]}}]

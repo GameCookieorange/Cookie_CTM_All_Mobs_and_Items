@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "brown_pass_hot_potato": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+            "nbt": "{Tags:[\"brown.got_hot_potato\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brown:fox/player_pass/test_nearby"
+  }
+}

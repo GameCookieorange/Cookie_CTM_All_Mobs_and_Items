@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    "minecraft:bedrock",
+    "minecraft:reinforced_deepslate",
+    "#minecraft:passable",
+    "minecraft:command_block",
+    "minecraft:spawner",
+    "minecraft:trial_spawner",
+    "minecraft:barrier",
+    "minecraft:chain_command_block",
+    "minecraft:repeating_command_block",
+    "minecraft:chest",
+    "minecraft:ender_chest",
+    "waxed_exposed_copper_chest",
+    "waxed_copper_chest",
+    "waxed_oxidized_copper_chest",
+    "waxed_weathered_copper_chest",
+    "#air"
+  ]
+}

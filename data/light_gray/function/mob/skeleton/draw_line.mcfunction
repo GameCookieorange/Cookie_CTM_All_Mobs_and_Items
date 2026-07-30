@@ -1,0 +1,10 @@
+execute as @s run summon marker ^ ^0.8 ^1.5 {Tags:["slay_attack_range"]}
+execute as @s run summon marker ^ ^0.8 ^2 {Tags:["slay_attack_range"]}
+particle sweep_attack ^ ^0.8 ^1 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^1.25 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^1.5 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^1.75 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^2 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^2.25 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^2.5 0 0 0 0 1
+particle sweep_attack ^ ^0.8 ^2.75 0 0 0 0 1

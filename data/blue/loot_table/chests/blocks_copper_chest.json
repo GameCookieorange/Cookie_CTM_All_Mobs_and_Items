@@ -1,0 +1,367 @@
+{
+  "type": "chest",
+  
+  "pools": [
+        {
+        "rolls": {"min": 0, "max": 2},
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "quality": 1,
+            "name": "minecraft:lingering_potion",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {"min": 0, "max": 1}
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:max_stack_size": 16,
+                  "minecraft:custom_data": {
+                    "orange_cyclone_potion": true
+                  },
+                  "minecraft:potion_contents": {
+                    "potion": "minecraft:water",
+                    "custom_color": 15792127,
+                    "custom_effects": [
+                      {
+                        "id": "minecraft:slow_falling",
+                        "amplifier": 0,
+                        "duration": 200,
+                        "show_particles": true
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "bold": true,
+                    "color": "white",
+                    "italic": true,
+                    "shadow_color": -929055033,
+                    "translate": "item.cookieorange_res.orange_cyclone_potion"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "bold": false,
+                    "color": "gray",
+                    "italic": false,
+                    "shadow_color": 184156158,
+                    "translate": "item.cookieorange_res.orange_cyclone_potion_lore_1"
+                  },
+                  {
+                    "bold": false,
+                    "color": "gray",
+                    "italic": false,
+                    "shadow_color": 184156158,
+                    "translate": "item.cookieorange_res.orange_cyclone_potion_lore_2"
+                  },
+                  {
+                    "bold": false,
+                    "color": "gray",
+                    "italic": false,
+                    "shadow_color": 184156158,
+                    "translate": "item.cookieorange_res.orange_cyclone_potion_lore_3"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+       {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 0, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "quick_charge": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "protection": 1
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "amount": 3,
+                  "slot": "armor",
+                  "id": "minecraft:leather_chestplate_armor",
+                  "operation": "add_value"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.08,
+                  "slot": "armor",
+                  "id": "minecraft:leather_chestplate_knockback_resistance",
+                  "operation": "add_value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "unbreaking": 1
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "amount": 1,
+                  "slot": "armor",
+                  "id": "minecraft:leather_helmet_armor",
+                  "operation": "add_value"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.04,
+                  "slot": "armor",
+                  "id": "minecraft:leather_helmet_knockback_resistance",
+                  "operation": "add_value"
+                }
+              ] 
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "blast_protection": 1,
+                  "unbreaking": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "knockback": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 0, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "fire_aspect": 1,
+                  "unbreaking": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 0, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "punch": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 9,
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "minecraft:vine",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 2 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 1,
+                  "animation": "eat",
+                  "sound": "block.vine.place",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:poison",
+                          "amplifier": 1,
+                          "duration": 40,
+                          "show_particles": false,
+                          "show_icon": false,
+                          "ambient": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:play_sound",
+                      "sound": "block.vine.step"
+                    }
+                  ]
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 12,
+          "name": "minecraft:pale_oak_log",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 3 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 12,
+          "name": "minecraft:orange_stained_glass",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 4 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 8,
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 5 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 8,
+          "name": "minecraft:pumpkin_pie",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 4 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:healing"
+                },
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

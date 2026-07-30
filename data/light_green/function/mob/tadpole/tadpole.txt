@@ -1,0 +1,4 @@
+# scoreboard players add @s light_green_timer 1
+# execute if score @s light_green_timer matches 200.. run scoreboard players set @s light_green_timer 0
+
+/give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:3,SpawnRange:8,MaxNearbyEntities:12,RequiredPlayerRange:16,Delay:1,MinSpawnDelay:1000,MaxSpawnDelay:2000,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:tadpole",Age:23400}},weight:1}]}] 1

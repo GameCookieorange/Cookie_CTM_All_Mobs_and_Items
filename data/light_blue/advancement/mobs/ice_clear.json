@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "ice_skeleton": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage":{
+                    "source_entity": {
+                        "nbt": "{Tags:[\"light_blue.coal_skeleton\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "light_blue:mob/coal_skeleton/skeleton_ini"
+    }
+}

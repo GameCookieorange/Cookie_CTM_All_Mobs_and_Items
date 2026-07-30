@@ -1,0 +1,2 @@
+execute if score @s light_blue_player_deaths matches 1.. run scoreboard players set @s light_blue_ice_level 0
+execute if score @s light_blue_player_deaths matches 1.. run scoreboard players set @s light_blue_player_deaths 0

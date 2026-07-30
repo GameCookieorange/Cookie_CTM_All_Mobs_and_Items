@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "kill_custom_entity": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"orange.wind.charge.creeper\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "thecookieorange:mob_info/creeper_info"
+  }
+}

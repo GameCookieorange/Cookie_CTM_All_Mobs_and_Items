@@ -1,0 +1,29 @@
+{
+  "values": [
+    "#minecraft:replaceable",
+    "#minecraft:banners",
+    "#minecraft:buttons",
+    "#minecraft:signs",
+    "#minecraft:wall_signs",
+    "#minecraft:all_hanging_signs",
+    "#minecraft:flowers",
+    "#minecraft:small_flowers",
+    "#minecraft:trapdoors",
+    "minecraft:torch",
+    "minecraft:redstone_torch",
+    "minecraft:copper_torch",
+    "minecraft:soul_torch",
+    "minecraft:wall_torch",
+    "minecraft:redstone_wall_torch",
+    "minecraft:copper_wall_torch",
+    "minecraft:soul_wall_torch",
+    "minecraft:redstone_wire",
+    "minecraft:lever",
+    "minecraft:tripwire",
+    "minecraft:tripwire_hook",
+    "minecraft:lantern",
+    "minecraft:cobweb",
+    "minecraft:firefly_bush",
+    "minecraft:snow"
+  ]
+}

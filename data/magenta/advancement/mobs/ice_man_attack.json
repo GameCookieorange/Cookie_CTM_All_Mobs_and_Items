@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "hit_by_ice_man": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+            "source_entity": {
+            "type": "minecraft:zombie",
+            "nbt": "{Tags:[\"magenta.ice_man\"]}"
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magenta:ice_man/ice_man_attack_ini"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "type": "chest",
+  "pools": [
+    {
+      "rolls": {"min": 0, "max": 2},
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 0, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "orange_cloud_potion": true
+                },
+                "minecraft:max_stack_size": 16,
+                "minecraft:potion_contents": {
+                  "custom_color": 15581951,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:wind_charged",
+                      "amplifier": 0,
+                      "duration": 400,
+                      "show_particles": true
+                    },
+                    {
+                      "id": "minecraft:regeneration",
+                      "amplifier": 0,
+                      "duration": 400,
+                      "show_particles": true
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "white",
+                  "italic": true,
+                  "shadow_color": -5740634,
+                  "translate": "item.cookieorange_res.orange_cloud_potion"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "shadow_color": 2028969727,
+                  "translate": "item.cookieorange_res.orange_cloud_potion_lore_1"
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "shadow_color": 2028969727,
+                  "translate": "item.cookieorange_res.orange_cloud_potion_lore_2"
+                },
+                {
+                  "color": "gray",
+                  "italic": false,
+                  "shadow_color": 2029171711,
+                  "translate": "item.cookieorange_res.orange_cloud_potion_lore_3"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "bane_of_arthropods": 1,
+                  "silk_touch": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "feather_falling": 1,
+                  "unbreaking": 1
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "amount": 1,
+                  "slot": "armor",
+                  "id": "minecraft:leather_boots_armor",
+                  "operation": "add_value"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.04,
+                  "slot": "armor",
+                  "id": "minecraft:leather_boots_knockback_resistance",
+                  "operation": "add_value"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight":6,
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "amount": 2,
+                  "slot": "armor",
+                  "id": "minecraft:leather_leggings_armor",
+                  "operation": "add_value"
+                },
+                {
+                  "attribute": "minecraft:knockback_resistance",
+                  "amount": 0.06,
+                  "slot": "armor",
+                  "id": "minecraft:leather_leggings_knockback_resistance",
+                  "operation": "add_value"
+                }
+              ]
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "blast_protection": 1,
+                  "unbreaking": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "fortune": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:wooden_pickaxe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "efficiency": 2
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "name": "minecraft:wooden_axe",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 0, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "sharpness": 1,
+                  "efficiency": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "minecraft:snowball",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 4 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "name": "minecraft:wind_charge",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 3 }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "white",
+                  "italic": true,
+                  "shadow_color": -9871264,
+                  "translate": "item.cookieorange_res.solid_wind"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 10,
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 4 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 13,
+          "name": "minecraft:carrot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 4, "max": 9 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 6,
+          "name": "minecraft:cooked_chicken",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 5 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 8,
+          "quality": 2,
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 2, "max": 4 }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:splash_potion",
+          "quality": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": { "min": 1, "max": 1 }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:healing"
+                },
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": ["minecraft:clock"],
+                "predicates": {
+                    "minecraft:custom_data": "{orange_purple_cheer_baton:1b}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+scoreboard players add @s purple_timer 1
+execute if entity @e[distance=..60, tag=!purple.wall_crossing, tag=!purple.phantom_sniper,type=!#minecraft:not_mob, nbt={active_effects:[{id:"minecraft:glowing"}]}] unless score @s purple_timer matches 0..130 run scoreboard players add @s purple_timer 4
+
+execute if score @s purple_timer matches 10..15 if entity @e[tag=!purple.wall_crossing, tag=!purple.phantom_sniper, distance=..60, type=#minecraft:attack_entity] run scoreboard players set @s purple_timer 16
+execute if score @s purple_timer matches 10..15 unless entity @e[tag=!purple.wall_crossing, tag=!purple.phantom_sniper, distance=..60, type=#minecraft:attack_entity] run scoreboard players set @s purple_timer 0
+
+execute if score @s purple_timer matches 60 run effect give @s glowing 2 0 true
+
+execute if score @s[nbt={active_effects:[{id:"minecraft:glowing"}]}] purple_timer matches 101..600 run effect clear @s glowing
+execute if score @s[nbt={active_effects:[{id:"minecraft:glowing"}]}] purple_timer matches 0..59 run effect clear @s glowing
+
+execute if score @s purple_timer matches 100 run function purple:mob/phantom_sniper/snipe
+
+execute if score @s purple_timer matches 60..120 if entity @e[tag=!purple.wall_crossing, tag=!purple.phantom_sniper, distance=..60, type=!#minecraft:not_mob, nbt={active_effects:[{id:"minecraft:glowing"}]}] run tp @s ^ ^ ^ facing entity @e[tag=!purple.wall_crossing, tag=!purple.phantom_sniper, distance=..60, type=!#minecraft:not_mob, nbt={active_effects:[{id:"minecraft:glowing"}]}, limit=1, sort=nearest] feet
+execute if score @s purple_timer matches 60..120 unless entity @e[tag=!purple.wall_crossing, tag=!purple.phantom_sniper, distance=..60, type=!#minecraft:not_mob, nbt={active_effects:[{id:"minecraft:glowing"}]}] run tp @s ^ ^ ^ facing entity @e[distance=..60, type=#minecraft:attack_entity, limit=1, sort=nearest] feet
+
+
+execute if score @s purple_timer matches 460.. run scoreboard players set @s purple_timer 0
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:0,MaxNearbyEntities:1,RequiredPlayerRange:40,Delay:0,MinSpawnDelay:2400,MaxSpawnDelay:3600,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:stray",Team:"purple.not_being_snipe",PersistenceRequired:1b,Health:18f,Tags:["purple.mobs","purple.phantom_sniper"],CustomName:{"bold":true,"color":"#6d517f","italic":false,"shadow_color":-6480172,"translate":"**魅影狙擊手**","underlined":true},equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:dyed_color":4917365,"minecraft:enchantments":{"feather_falling":4,"vanishing_curse":1},"minecraft:enchantment_glint_override":false}},legs:{id:"minecraft:netherite_leggings",count:1,components:{"minecraft:enchantment_glint_override":false,"minecraft:enchantments":{"vanishing_curse":1}}},chest:{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:enchantments":{"projectile_protection":3,"vanishing_curse":1},"minecraft:dyed_color":1708848,"minecraft:trim":{material:"minecraft:netherite",pattern:"minecraft:vex"},"minecraft:enchantment_glint_override":false}},head:{id:"minecraft:daylight_detector",count:1,components:{"minecraft:enchantments":{"vanishing_curse":1},"minecraft:enchantment_glint_override":true}},mainhand:{id:"minecraft:redstone_torch",count:1},offhand:{id:"minecraft:crossbow",count:1,components:{"minecraft:enchantment_glint_override":true,"minecraft:enchantments":{"vanishing_curse":1}}}},drop_chances:{feet:0.000,legs:0.000,chest:0.000,head:0.000,mainhand:0.000,offhand:0.000},attributes:[{id:"minecraft:max_health",base:18},{id:"minecraft:attack_damage",base:6},{id:"minecraft:attack_knockback",base:1},{id:"minecraft:knockback_resistance",base:0.6},{id:"minecraft:movement_speed",base:0.02},{id:"minecraft:follow_range",base:60}]}},weight:1}]}] 1

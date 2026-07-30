@@ -1,0 +1,5 @@
+execute at @s unless entity @e[nbt={active_effects:[{id:"minecraft:glowing"}]},distance=..10] run effect give @s invisibility 1 1 true
+execute at @s if entity @e[nbt={active_effects:[{id:"minecraft:glowing"}]},distance=..10] run effect clear
+execute at @s run particle portal ~ ~ ~ 0.2 0.2 0.2 0.2 2
+
+# give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:2,SpawnRange:8,MaxNearbyEntities:3,RequiredPlayerRange:14,Delay:0,MinSpawnDelay:1200,MaxSpawnDelay:1600,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:enderman",DeathLootTable:"minecraft:empty",Health:26f,anger_end_time:400,Tags:["purple.mobs","purple.invisible_man"],CustomName:{"bold":true,"color":"#CAA2DB","italic":false,"shadow_color":-13887411,"translate":"隱形人","underlined":true},attributes:[{id:"minecraft:scale",base:0.5},{id:"minecraft:max_health",base:26},{id:"minecraft:attack_damage",base:7.5},{id:"minecraft:movement_speed",base:0.1}]}},weight:1}]}] 1

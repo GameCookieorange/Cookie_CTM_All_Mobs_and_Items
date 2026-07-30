@@ -1,0 +1,16 @@
+scoreboard players add @s final_timer 1
+
+execute if score @s final_timer matches 8..10 unless entity @e[type=!#minecraft:not_mob, team=!final_boss_team, distance=..30, limit=1, sort=nearest] at @s run scoreboard players set @s final_timer 0
+execute if score @s final_timer matches 8..10 if entity @e[type=!#minecraft:not_mob, team=!final_boss_team, distance=..30, limit=1, sort=nearest] at @s run scoreboard players set @s final_timer 20
+
+execute if score @s final_timer matches 21 at @s run effect give @s glowing 3 0 true
+
+execute if score @s final_timer matches 20..80 at @s run execute as @e[type=!#minecraft:not_mob, team=!final_boss_team, distance=..40, sort=nearest, limit=1] at @s run particle shriek{delay:1} ~ ~1 ~ 0 0 0 0.1 1 force
+
+execute if score @s final_timer matches 80 at @s run summon armor_stand ~ ~ ~ {CustomNameVisible:0b,Team:"final_boss_team",Silent:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["final.sonic_killer_kail"],attributes:[{id:"minecraft:scale",base:1.2}],DisabledSlots:4144959,equipment:{chest:{id:"minecraft:netherite_chestplate",count:1,components:{"minecraft:trim":{material:"minecraft:diamond",pattern:"minecraft:silence"}}},head:{id:"minecraft:sculk_shrieker",count:1},mainhand:{id:"minecraft:sculk_sensor",count:1},offhand:{id:"minecraft:sculk_sensor",count:1}},CustomName:{"bold":true,"color":"#1D8E96","italic":false,"shadow_color":-15138561,"text":"**音響雷射炮ex**","underlined":true}}
+
+execute if score @s final_timer matches 370.. at @s run scoreboard players set @s final_timer 0
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:4,MaxNearbyEntities:4,RequiredPlayerRange:16,Delay:1,MinSpawnDelay:1600,MaxSpawnDelay:2000,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:vindicator",Team:"final_boss_team",PersistenceRequired:1b,Health:60f,Tags:["final.sonic_shooter"],CustomName:{"bold":true,"color":"#192F5C","italic":false,"shadow_color":-9756615,"text":"**||音波巨砲手||**","underlined":true},equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:enchantments":{"feather_falling":4}}},head:{id:"minecraft:white_wool",count:1}},drop_chances:{feet:0.000,head:0.000},attributes:[{id:"minecraft:attack_damage",base:12},{id:"minecraft:attack_knockback",base:2},{id:"minecraft:max_health",base:60},{id:"minecraft:movement_speed",base:0.1}]}},weight:1}]}] 0
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:3,SpawnRange:4,MaxNearbyEntities:5,RequiredPlayerRange:30,Delay:1,MinSpawnDelay:100,MaxSpawnDelay:300,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:snow_golem",Health:35f,equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{enchantments:{feather_falling:10}}}},drop_chances:{feet:0.000},attributes:[{id:"minecraft:max_health",base:35},{id:"minecraft:follow_range",base:100}]}},weight:1}]}] 1

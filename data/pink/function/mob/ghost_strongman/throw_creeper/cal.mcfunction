@@ -1,0 +1,13 @@
+tp @s ^ ^ ^ facing entity @e[distance=..40, type=!#not_mob, team=!pink_ghost_team, limit=1, sort=nearest, tag=!pink.fishes, tag=!pink.pufferfish] eyes
+
+playsound entity.drowned.hurt hostile @a ~ ~ ~ 1.2 0.4
+
+summon marker 0 0 0 {Tags:["object"]}
+
+execute rotated as @s positioned 0.0 0.0 0.0 run tp @e[tag=object,limit=1] ^ ^0.5 ^2.0
+# execute rotated as @s positioned 0.0 0.0 0.0 run tp @e[tag=object,limit=1] ^ ^ ^3.4
+
+execute as @s run data modify entity @s Motion set from entity @e[tag=object,limit=1, sort=nearest] Pos
+
+kill @e[tag=object]
+

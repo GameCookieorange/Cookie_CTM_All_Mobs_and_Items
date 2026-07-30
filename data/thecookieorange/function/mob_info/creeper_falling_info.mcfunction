@@ -1,0 +1,3 @@
+playsound entity.player.levelup ambient @s ~ ~ ~ 1 1
+
+tellraw @s ["",{translate:"cookieorange_res.orange_mob_info",bold:true,color:"white"},{translate:"entity.cookieorange_res.orange_wind_charge_falling_creeper",bold:true,color:"#7db8e8",hover_event:{action:"show_text",value:[{translate:"entity.cookieorange_res.orange_wind_charge_creeper_falling_lore_1"},{translate:"entity.cookieorange_res.orange_wind_charge_creeper_falling_lore_2"},{translate:"entity.cookieorange_res.orange_wind_charge_creeper_falling_lore_3"}]}}]

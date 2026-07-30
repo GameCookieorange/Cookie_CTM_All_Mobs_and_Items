@@ -1,0 +1,3 @@
+execute unless score @s cyan_id = @s cyan_id store result score @s cyan_id run scoreboard players add #cyan_target cyan_id 1
+
+# /give @p lingering_potion[custom_name={"bold":true,"color":"#9bbc87","italic":false,"shadow_color":-9491317,"translate":"*追蹤彈投擲物*","underlined":true},potion_contents={custom_color:12837040,custom_effects:[{id:"minecraft:levitation",amplifier:0,duration:20,show_particles:0b}]},potion_duration_scale=2,custom_data={cyan_bullets_potion:true}] 1

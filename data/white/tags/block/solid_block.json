@@ -1,0 +1,26 @@
+{
+  "values": [
+    "#minecraft:replaceable",
+    "#minecraft:banners",
+    "#minecraft:buttons",
+    "#minecraft:signs",
+    "#minecraft:wall_signs",
+    "minecraft:torch",
+    "minecraft:redstone_torch",
+    "minecraft:redstone_wire",
+    "minecraft:lever",
+    "minecraft:tripwire",
+    "minecraft:tripwire_hook",
+    "minecraft:lantern",
+    "minecraft:glass",
+    "minecraft:glass_pane",
+    "minecraft:cobweb",
+    "#minecraft:fences",
+    "#minecraft:fence_gates",
+    "#minecraft:walls",
+    "minecraft:white_stained_glass",
+    "minecraft:gray_stained_glass",
+    "minecraft:light_gray_stained_glass",
+    "minecraft:mushroom_stem"
+  ]
+}

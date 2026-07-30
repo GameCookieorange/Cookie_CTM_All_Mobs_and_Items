@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "kill_custom_entity_1": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"orange.cold.wind.silverfish\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "kill_custom_entity_2": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"orange.cold.wind.phantom\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [ "kill_custom_entity_1", "kill_custom_entity_2" ]
+  ],
+  "rewards": {
+    "function": "thecookieorange:mob_info/cold_phantom_info"
+  }
+}
