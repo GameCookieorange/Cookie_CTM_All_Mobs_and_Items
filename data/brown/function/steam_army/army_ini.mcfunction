@@ -1,0 +1,1 @@
+scoreboard players add @s brown_timer 1

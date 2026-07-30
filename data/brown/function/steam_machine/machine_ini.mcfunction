@@ -1,14 +1,12 @@
 scoreboard players add @s brown_timer 1
 
-execute if score @s brown_timer matches 10..15 if entity @e[type=!#minecraft:not_mob,tag=!brown.steampunk, distance=..5] run scoreboard players set @s brown_timer 16
-execute if score @s brown_timer matches 10..15 unless entity @e[type=!#minecraft:not_mob, tag=!brown.steampunk, distance=..5] run scoreboard players set @s brown_timer 10
+execute if score @s brown_timer matches 10..15 if entity @e[type=!#minecraft:not_mob,tag=!brown.steampunk, distance=..6] run scoreboard players set @s brown_timer 16
+execute if score @s brown_timer matches 10..15 unless entity @e[type=!#minecraft:not_mob, tag=!brown.steampunk, distance=..6] run scoreboard players set @s brown_timer 10
 
 execute if score @s brown_timer matches 20 run effect give @s glowing 2 0 true
 
-execute if score @s brown_timer matches 60 at @s run playsound block.fire.extinguish hostile @a ~ ~ ~ 0.8 0.2
-execute if score @s brown_timer matches 60 at @s run particle cloud ~ ~0.3 ~ 1.8 0.1 1.8 0 75 normal
-execute if score @s brown_timer matches 60 at @s run particle cloud ~ ~0.3 ~ 1.8 1.1 1.8 0 75 normal
-execute if score @s brown_timer matches 60 as @e[type=!#minecraft:not_mob, tag=!brown.steampunk, distance=..5] at @s run function brown:steam_machine/burn
+execute if score @s brown_timer matches 60 as @e[type=!#minecraft:not_mob, tag=!brown.steampunk, distance=..6] at @s run function brown:steam_machine/burn
+execute if score @s brown_timer matches 60 at @s run function brown:steam_machine/summon_marker
 
 execute if score @s brown_timer matches 200.. run scoreboard players set @s brown_timer 0
 

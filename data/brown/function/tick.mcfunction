@@ -12,8 +12,14 @@ execute as @e[type=wither_skeleton, tag=brown.clone] at @s run function brown:cl
 
 execute as @e[type=skeleton, tag=brown.jet_crossbowman] at @s run function brown:jet_crossbowman/jet_crossbowman
 
-execute as @e[type=husk ,tag=brown.steam_machine] at @s run function brown:steam_machine/machine
+execute as @e[type=husk ,tag=brown.steam_machine] at @s run function brown:steam_machine/machine_ini
+execute as @e[type=marker, tag=brown.steam_machine_marker] at @s run function brown:steam_machine/marker
 
 execute as @e[type=fox, tag=brown.hot_potato_fox] at @s run function brown:fox/hot_potato_fox_ini
 execute as @e[type=tnt, tag=brown.hot_potato] at @s run function brown:fox/tnt
 execute as @e[type=!#minecraft:not_mob, tag=brown.got_hot_potato] at @s run function brown:fox/player_pass/got_hot_potato
+
+execute as @e[type=piglin_brute ,tag=brown.saboteur] at @s run function brown:saboteur/saboteur_ini
+execute as @e[type=marker ,tag=brown.saboteur_dash_marker] at @s run function brown:saboteur/marker
+execute as @e[type=marker ,tag=brown.saboteur_hint_marker] at @s run function brown:saboteur/hint_marker
+execute as @e[type=piglin_brute ,tag=brown.saboteur, tag=brown.saboteur_dash_start] at @s run function brown:saboteur/dash_attack/dash_start
