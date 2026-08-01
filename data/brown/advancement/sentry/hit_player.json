@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "brown_pass_hot_potato": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+            "source_entity":{
+                "nbt":  "{Tags:[\"brown.transfer_sentry\"]}"
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "brown:transitive_sentry/hit_player"
+  }
+}

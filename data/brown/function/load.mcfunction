@@ -10,6 +10,9 @@ scoreboard objectives add brown_attack dummy
 
 scoreboard objectives add brown_number_value dummy
 
+scoreboard objectives add brown_teleport_value dummy
+
+
 scoreboard objectives add brown_pos.x dummy
 scoreboard objectives add brown_pos.y dummy
 scoreboard objectives add brown_pos.z dummy

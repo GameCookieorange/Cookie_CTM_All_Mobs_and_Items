@@ -26,3 +26,6 @@ execute as @e[type=piglin_brute ,tag=brown.saboteur, tag=brown.saboteur_dash_sta
 
 execute as @e[tag=brown.turret] at @s run function brown:automatic_turret/turret_ini
 execute as @e[type=marker, tag=brown.turret_marker] at @s run function brown:automatic_turret/marker
+
+execute as @e[type=happy_ghast, tag=brown.happy_supply] at @s run function brown:steam_supply/army_ini
+execute as @e[tag=brown.steam_supply_item] at @s run function brown:steam_supply/supply/supply_ini
