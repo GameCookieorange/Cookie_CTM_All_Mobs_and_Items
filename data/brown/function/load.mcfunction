@@ -8,6 +8,7 @@ scoreboard objectives add brown_hot_potato_timer dummy
 
 scoreboard objectives add brown_attack dummy
 
+scoreboard objectives add brown_number_value dummy
 
 scoreboard objectives add brown_pos.x dummy
 scoreboard objectives add brown_pos.y dummy

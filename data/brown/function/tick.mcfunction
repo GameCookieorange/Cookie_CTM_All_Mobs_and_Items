@@ -23,3 +23,6 @@ execute as @e[type=piglin_brute ,tag=brown.saboteur] at @s run function brown:sa
 execute as @e[type=marker ,tag=brown.saboteur_dash_marker] at @s run function brown:saboteur/marker
 execute as @e[type=marker ,tag=brown.saboteur_hint_marker] at @s run function brown:saboteur/hint_marker
 execute as @e[type=piglin_brute ,tag=brown.saboteur, tag=brown.saboteur_dash_start] at @s run function brown:saboteur/dash_attack/dash_start
+
+execute as @e[tag=brown.turret] at @s run function brown:automatic_turret/turret_ini
+execute as @e[type=marker, tag=brown.turret_marker] at @s run function brown:automatic_turret/marker

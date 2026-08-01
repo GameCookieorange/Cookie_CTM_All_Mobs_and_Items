@@ -1,8 +1,8 @@
-execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet"]}
-execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet"]}
-execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet"]}
-execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet"]}
-execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet"]}
+execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet","player_item"]}
+execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet","player_item"]}
+execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet","player_item"]}
+execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet","player_item"]}
+execute at @s run summon shulker_bullet ~ ~ ~ {Tags:["cyan.player_potion_bullet","player_item"]}
 
 
 # give @a diamond

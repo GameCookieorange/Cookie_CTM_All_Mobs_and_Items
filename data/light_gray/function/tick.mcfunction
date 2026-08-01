@@ -25,7 +25,7 @@ execute as @e[tag=light_gray.plasma, team=light_gray_machine_team, type=shulker]
 execute as @e[tag=light_gray.plasma_bullet, type=small_fireball] at @s run function light_gray:mob/plasma/new_bullet
 execute as @e[tag=light_gray.fast_marker, type=marker] at @s run function light_gray:mob/plasma/fast_marker
 
-execute as @e[type=shulker_bullet] at @s run execute if entity @e[tag=light_gray.plasma, distance=..3] run function light_gray:mob/plasma/bullet
+execute as @e[type=shulker_bullet, tag=!player_item] at @s run execute if entity @e[tag=light_gray.plasma, distance=..3] run function light_gray:mob/plasma/bullet
 
 execute as @e[tag=light_gray.sky_soldier, team=light_gray_machine_team] at @s run function light_gray:mob/sky_soldier/soldier_ini
 
