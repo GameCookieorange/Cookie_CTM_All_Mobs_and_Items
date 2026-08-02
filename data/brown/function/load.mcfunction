@@ -12,10 +12,11 @@ scoreboard objectives add brown_number_value dummy
 
 scoreboard objectives add brown_teleport_value dummy
 
-
 scoreboard objectives add brown_pos.x dummy
 scoreboard objectives add brown_pos.y dummy
 scoreboard objectives add brown_pos.z dummy
+
+scoreboard objectives add brown_player_death deathCount
 
 team add brown_steampunk
 team modify brown_steampunk color dark_red

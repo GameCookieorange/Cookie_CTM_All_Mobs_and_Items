@@ -1,7 +1,7 @@
 scoreboard players add @s brown_debug 1
 
-execute if score @s brown_debug matches 10..15 if entity @p[distance=..14] run scoreboard players set @s brown_debug 16
-execute if score @s brown_debug matches 10..15 unless entity @p[distance=..14] run scoreboard players set @s brown_debug 10
+execute if score @s brown_debug matches 10..15 if entity @p[distance=..16] run scoreboard players set @s brown_debug 16
+execute if score @s brown_debug matches 10..15 unless entity @p[distance=..16] run scoreboard players set @s brown_debug 10
 
 execute if score @s brown_debug matches 1..20 run effect give @s glowing 1 1 true
 

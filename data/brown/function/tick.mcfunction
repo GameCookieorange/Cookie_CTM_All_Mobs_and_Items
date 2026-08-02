@@ -18,6 +18,7 @@ execute as @e[type=marker, tag=brown.steam_machine_marker] at @s run function br
 execute as @e[type=fox, tag=brown.hot_potato_fox] at @s run function brown:fox/hot_potato_fox_ini
 execute as @e[type=tnt, tag=brown.hot_potato] at @s run function brown:fox/tnt
 execute as @e[type=!#minecraft:not_mob, tag=brown.got_hot_potato] at @s run function brown:fox/player_pass/got_hot_potato
+execute as @a[tag=brown.got_hot_potato] if score @s brown_player_death matches 1.. run function brown:fox/player_death
 
 execute as @e[type=piglin_brute ,tag=brown.saboteur] at @s run function brown:saboteur/saboteur_ini
 execute as @e[type=marker ,tag=brown.saboteur_dash_marker] at @s run function brown:saboteur/marker

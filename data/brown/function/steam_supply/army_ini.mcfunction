@@ -3,8 +3,9 @@ scoreboard players add @s brown_timer 1
 execute if score @s brown_timer matches 10 run function brown:steam_supply/supply/give_supply
 execute if score @s brown_timer matches 30 run function brown:steam_supply/supply/give_supply
 execute if score @s brown_timer matches 50 run function brown:steam_supply/supply/give_supply
+execute if score @s brown_timer matches 70 run function brown:steam_supply/supply/give_supply
 
-execute if score @s brown_timer matches 250.. run scoreboard players set @s brown_timer 0
+execute if score @s brown_timer matches 200.. run scoreboard players set @s brown_timer 0
 
 # ===========================================================================
 
