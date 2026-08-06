@@ -18,12 +18,10 @@
     "cyan:tick_item",
     "blue:tick",
     "yellow:tick",
-    "magenta:tick",
-    "orange:tick",
-    "white:tick",
     "white:tick_item", 
     "final:tick",
     "purple:tick",
-    "brown:tick"
+    "brown:tick",
+    "all_mobs:tick"
   ]
 }

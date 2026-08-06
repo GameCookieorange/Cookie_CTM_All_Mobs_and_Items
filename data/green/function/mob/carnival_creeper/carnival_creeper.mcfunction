@@ -1,0 +1,11 @@
+scoreboard players add @s green_timer 1
+
+execute if score @s green_timer matches 10..15 if entity @e[tag=!green.is_party_creeper, tag=!green.not_party_creeper, type=!#minecraft:not_mob ,distance=..12] at @s run scoreboard players set @s green_timer 16
+execute if score @s green_timer matches 10..15 unless entity @e[tag=!green.is_party_creeper, tag=!green.not_party_creeper, type=!#minecraft:not_mob ,distance=..12] at @s run scoreboard players set @s green_timer 10
+
+execute if score @s green_timer matches 20 run effect give @s glowing 2 2 true 
+execute if score @s green_timer matches 60 at @s run function green:mob/carnival_creeper/marker/summon
+
+execute if score @s green_timer matches 460 run scoreboard players set @s green_timer 0
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:2,MaxNearbyEntities:2,RequiredPlayerRange:18,Delay:0,MinSpawnDelay:3800,MaxSpawnDelay:4200,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:creeper",Fuse:45,Team:"green_party_creeper",PersistenceRequired:1b,Health:50f,powered:1b,Passengers:[{id:"minecraft:armor_stand",Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["green_creeper_hat"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:clock",count:1,components:{"minecraft:item_model":"cookieorange_res:green/green_creeper_hat","minecraft:custom_data":{green_creeper_hat:1b}}}}}],ExplosionRadius:2b,Tags:["green.carnival_creeper","green.is_party_creeper"],CustomName:{"bold":true,"color":"#F0A12B","italic":false,"shadow_color":-11830763,"translate":"**嘉年華苦力怕**","underlined":true},equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:enchantments":{"blast_protection":10,"vanishing_curse":1}}},head:{id:"minecraft:leather_helmet",count:1,components:{"minecraft:enchantments":{"blast_protection":10,"vanishing_curse":1}}}},drop_chances:{feet:0.000,head:0.000},attributes:[{id:"minecraft:movement_speed",base:0.13},{id:"minecraft:explosion_knockback_resistance",base:0.8},{id:"minecraft:max_health",base:50},{id:"minecraft:follow_range",base:20}]}},weight:1}]}] 1

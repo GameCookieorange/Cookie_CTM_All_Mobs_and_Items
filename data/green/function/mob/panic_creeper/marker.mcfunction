@@ -1,0 +1,1 @@
+execute unless predicate green:is_sitting at @s run kill @s

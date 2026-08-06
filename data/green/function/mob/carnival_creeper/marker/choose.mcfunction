@@ -1,0 +1,9 @@
+execute store result score @s green_number_value run random value 0..6
+
+execute if score @s green_number_value matches 0 at @s run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Glowing:1b,Life:0,LifeTime:20,ShotAtAngle:1b,Tags:["green.firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_trail:true,colors:[I;4760369],fade_colors:[I;5658960]}]}}}}
+execute if score @s green_number_value matches 1 at @s run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Glowing:1b,Life:0,LifeTime:20,ShotAtAngle:1b,Tags:["green.firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_trail:true,colors:[I;7470925],fade_colors:[I;11321134]}]}}}}
+execute if score @s green_number_value matches 2 at @s run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Glowing:1b,Life:0,LifeTime:20,ShotAtAngle:1b,Tags:["green.firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_trail:true,colors:[I;13696786],fade_colors:[I;5086225]}]}}}}
+
+execute if score @s green_number_value matches 3 at @s run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Glowing:1b,Life:0,LifeTime:20,ShotAtAngle:1b,Tags:["green.firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_trail:true,colors:[I;16757791],fade_colors:[I;1282382]}]}}}}
+ 
+execute if score @s green_number_value matches 4 at @s run summon firework_rocket ~ ~ ~ {NoGravity:1b,Silent:1b,Glowing:1b,Life:0,LifeTime:20,ShotAtAngle:1b,Tags:["green.firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",has_trail:true,colors:[I;4963720],fade_colors:[I;6742036]}]}}}}

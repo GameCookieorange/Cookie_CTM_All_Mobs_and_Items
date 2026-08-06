@@ -2,7 +2,7 @@ scoreboard players add @s magenta_debug 1
 
 execute if score @s magenta_debug matches 1..2 rotated as @p run tp @s ^ ^ ^ ~ ~
 
-execute if score @s magenta_debug matches 2 run execute as @s at @s run summon marker ^ ^ ^30 {Tags:["magenta.dash_point"]}
+execute if score @s magenta_debug matches 2 run execute as @s at @s run summon marker ^ ^ ^30 {Tags:["magenta.mob","magenta.dash_point"]}
 
 # =================================================
 

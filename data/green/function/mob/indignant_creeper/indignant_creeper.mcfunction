@@ -1,0 +1,11 @@
+execute if entity @a[team=!green_party_creeper,distance=..30] at @s run function green:mob/indignant_creeper/angry
+
+scoreboard players add @s green_timer 1
+
+execute if score @s green_timer matches 10 at @s run particle angry_villager ~ ~ ~ 1 0.8 1 0.1 10
+
+execute if score @s green_timer matches 40.. at @s run scoreboard players set @s green_timer 0
+
+execute if entity @e[type=#minecraft:arrows, distance=..4, tag=!green.blocked_arrow] as @e[type=#minecraft:arrows, distance=..4, sort=nearest, limit=1] at @s run function green:mob/indignant_creeper/arrow_block
+
+# /give @p spawner[block_entity_data={id:"mob_spawner",SpawnCount:1,SpawnRange:2,MaxNearbyEntities:2,RequiredPlayerRange:30,Delay:0,MinSpawnDelay:3000,MaxSpawnDelay:4000,SpawnPotentials:[{data:{custom_spawn_rules:{sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}},entity:{id:"minecraft:creeper",Team:"green_party_creeper",PersistenceRequired:1b,Health:10f,powered:1b,ExplosionRadius:3b,Fuse:20,Tags:["green.indignant_creeper","green.is_party_creeper"],Passengers:[{id:"minecraft:armor_stand",Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["green_creeper_hat"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:clock",count:1,components:{"minecraft:item_model":"cookieorange_res:green/green_creeper_hat","minecraft:custom_data":{green_creeper_hat:1b}}}}}],CustomName:{"bold":true,"color":"#d33131","italic":false,"shadow_color":-11830763,"translate":"**憤怒苦力怕**","underlined":true},equipment:{feet:{id:"minecraft:leather_boots",count:1,components:{"minecraft:enchantments":{"blast_protection":10,"vanishing_curse":1}}},head:{id:"minecraft:leather_helmet",count:1,components:{"minecraft:enchantments":{"blast_protection":10,"vanishing_curse":1}}}},drop_chances:{feet:0.000,head:0.000},attributes:[{id:"minecraft:scale",base:1.5},{id:"minecraft:movement_speed",base:0.35},{id:"minecraft:explosion_knockback_resistance",base:1},{id:"minecraft:max_health",base:10},{id:"minecraft:follow_range",base:50}]}},weight:1}]}] 1

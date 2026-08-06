@@ -1,0 +1,8 @@
+execute store result score @s green_number_value run random value 0..3
+
+execute if score @s green_number_value matches 0 at @s run summon firework_rocket ~1 ~-1.5 ~1 {NoGravity:1b,Glowing:1b,LifeTime:40,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],Tags:["green.shooter_firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_twinkle:true,has_trail:true,colors:[I;16765025],fade_colors:[I;6829834]}]}}}}
+execute if score @s green_number_value matches 1 at @s run summon firework_rocket ~-1 ~-1.5 ~-1 {NoGravity:1b,Glowing:1b,LifeTime:40,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],Tags:["green.shooter_firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_twinkle:true,has_trail:true,colors:[I;1093720],fade_colors:[I;1920017]}]}}}}
+execute if score @s green_number_value matches 2 at @s run summon firework_rocket ~1 ~-1.5 ~-1 {NoGravity:1b,Glowing:1b,LifeTime:40,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],Tags:["green.shooter_firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_twinkle:true,has_trail:true,colors:[I;7133748],fade_colors:[I;2848025]}]}}}}
+execute if score @s green_number_value matches 3 at @s run summon firework_rocket ~-1 ~-1.5 ~1 {NoGravity:1b,Glowing:1b,LifeTime:40,ShotAtAngle:1b,Motion:[0.0,-1.0,0.0],Tags:["green.shooter_firework"],FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"creeper",has_twinkle:true,has_trail:true,colors:[I;14941019],fade_colors:[I;6315530]}]}}}}
+ 
+execute as @s[type=zombie] run effect give @s slow_falling 6 3 true

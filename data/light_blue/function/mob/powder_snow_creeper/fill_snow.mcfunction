@@ -1,4 +1,4 @@
-execute as @s run data merge entity @s {Tags:["light_blue.powder_snow_creeper"], CustomName:{"bold":true,"color":"#9CE1FF","italic":false,"shadow_color":-9012798,"text":"粉雪苦力怕","underlined":true}}
+execute as @s run data merge entity @s {Tags:["light_blue.mob","light_blue.powder_snow_creeper"], CustomName:{"bold":true,"color":"#9CE1FF","italic":false,"shadow_color":-9012798,"text":"粉雪苦力怕","underlined":true}}
 
 execute as @e[type=!#not_mob, distance=..3.5] run damage @s 10 player_explosion by @e[type=area_effect_cloud, limit=1, sort=nearest, tag=light_blue.powder_snow_creeper]
 execute as @e[type=!#not_mob, distance=..6] run damage @s 6 player_explosion by @e[type=area_effect_cloud, limit=1, sort=nearest, tag=light_blue.powder_snow_creeper]

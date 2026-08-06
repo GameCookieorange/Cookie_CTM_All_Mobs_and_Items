@@ -2,9 +2,9 @@ scoreboard players add @s cyan_timer 1
 
 execute if score @s cyan_timer matches 10 run function cyan:mob/void/change
 
-execute if score @s cyan_timer matches 20.. run scoreboard players set @s cyan_timer 0
+execute if score @s cyan_timer matches 40.. run scoreboard players set @s cyan_timer 0
 
-execute as @a[distance=..5] run effect give @s wither 3 0 false
+execute if score @s cyan_timer matches 20 as @a[distance=..5] run effect give @s wither 4 0 false
 
 particle dust_color_transition{from_color:[0.086,0.012,0.098],to_color:[0.000,0.000,0.000],scale:2.5} ~ ~ ~ 1 1 1 0 2 normal
 

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "brown_pass_hot_potato": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity":{
+            "nbt":  "{Tags:[\"green.is_party_creeper\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "green:player_with_hat/hit_party_creeper"
+  }
+}
